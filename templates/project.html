@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Ming Zhong</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static/assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="/" class="logo"><strong>Ming</strong> Zhong</a>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/stevenoppa/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/datnerde" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://medium.com/@ming.zhong" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Projects & Blogs</h1>
+					</header>
+
+					<section>
+						<div class="posts">
+							<article>
+								<a href="https://mingzhong.shinyapps.io/hospital_intelligence/" class="image"><img src="https://images.unsplash.com/photo-1584291527905-f930791fb1ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" style="width: 366px; height: 225px;" alt="" /></a>
+								<h3>Health Intelligence Shiny App</h3>
+								<p>A hospital recommendation system helps you find the best hosptial for your conditions</p>
+								<ul class="actions">
+									<li><a href="https://mingzhong.shinyapps.io/hospital_intelligence/" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://mingzhong.shinyapps.io/H1BViz/" class="image"><img src="https://imageio.forbes.com/specials-images/imageserve/5f514aee56930497fa2f2f29/Concept-of-H1b-Visa-for-foreign-workers-showing-wooden-letters-with-US-or-United/0x0.jpg?format=jpg&crop=5078,2992,x626,y366,safe&width=960" style="width: 366px; height: 225px;" alt="" /></a>
+								<h3>H1B Dashbaord</h3>
+								<p>Through this tool, we hope to help international students like us make informed decisions about job applications and about selecting industries/companies with high H-1B approvals.</p>
+								<ul class="actions">
+									<li><a href="https://mingzhong.shinyapps.io/H1BViz/" class="button">More</a></li>
+								</ul>
+							</article>
+							{% for post in all_posts: %}
+							<article>
+								<a href={{post.post_link}} class="image"><img src={{post.imgurl}} style="width: 366px; height: 225px;" alt="" /></a>
+								<h3>{{post.post_title}}</h3>
+								<p>{{post.summary}}</p>
+								<ul class="actions">
+									<li><a href={{post.post_link}} class="button">More</a></li>
+								</ul>
+							</article>
+							{% endfor %}
+<!--							<article>-->
+<!--								<a href="https://medium.com/@ming.zhong/customer-segmentation-for-arvato-financial-solutions-376ea0e825ec" class="image"><img src="https://miro.medium.com/max/700/0*aizXlnuOuFF1WOqM.png" style="width: 366px; height: 225px;" alt="" /></a>-->
+<!--								<h3>Customer Segmentation Analysis</h3>-->
+<!--								<p>Identify which individuals are most likely to respond to the campaign and become customers of the mail-order company.</p>-->
+<!--								<ul class="actions">-->
+<!--									<li><a href="https://medium.com/@ming.zhong/customer-segmentation-for-arvato-financial-solutions-376ea0e825ec" class="button">More</a></li>-->
+<!--								</ul>-->
+<!--							</article>-->
+<!--							<article>-->
+<!--								<a href="https://medium.com/@ming.zhong/how-to-use-chi-square-test-37d6464b6b29" class="image"><img src="https://images.unsplash.com/photo-1569803903286-eb86d49af323?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=852&q=80" style="width: 366px; height: 225px;" alt="" /></a>-->
+<!--								<h3>Chi-sqaure Test Guide</h3>-->
+<!--								<p>Comparisons of different versions of chi-square tests.</p>-->
+<!--								<ul class="actions">-->
+<!--									<li><a href="https://medium.com/@ming.zhong/how-to-use-chi-square-test-37d6464b6b29" class="button">More</a></li>-->
+<!--								</ul>-->
+<!--							</article>-->
+						</div>
+					</section>
+
+
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+				<!-- <section id="search" class="alt">
+					<form method="post" action="#">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section> -->
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="/">Homepage</a></li>
+						<li><a href="aboutme">About Me</a></li>
+						<li><a href="project">Projects & Blogs</a></li>
+					</ul>
+				</nav>
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Contact Me</h2>
+					</header>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="mailto: m.zhong@columbia.edu">m.zhong@columbia.edu</a></li>
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/stevenoppa/">stevenoppa</a></li>
+						<li class="icon solid fa-home">Somewhere Arizona</a></li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; stevenzhong. All rights reserved.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="static/assets/js/jquery.min.js"></script>
+	<script src="static/assets/js/browser.min.js"></script>
+	<script src="static/assets/js/breakpoints.min.js"></script>
+	<script src="static/assets/js/util.js"></script>
+	<script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
