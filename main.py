@@ -32,7 +32,7 @@ def get_medium_publications(url):
 posts = get_medium_publications(url="https://medium.com/feed/@ming.zhong")
 app = Flask(__name__)
 
-print(posts)
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -46,8 +46,3 @@ def aboutme():
 @app.route("/project")
 def project():
     return render_template("project.html", all_posts=posts)
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    app.run(debug=True)
