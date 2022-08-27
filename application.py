@@ -31,23 +31,23 @@ def get_medium_publications(url):
 
 
 posts = get_medium_publications(url="https://medium.com/feed/@ming.zhong")
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route("/")
+@application.route("/")
 def home():
     return render_template("index.html")
 
 
-@app.route("/aboutme")
+@application.route("/aboutme")
 def aboutme():
     return render_template("aboutme.html")
 
 
-@app.route("/project")
+@application.route("/project")
 def project():
     return render_template("project.html", all_posts=posts)
 
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
