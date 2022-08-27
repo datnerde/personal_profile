@@ -3,6 +3,7 @@ import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 
+
 def get_medium_publications(url):
     """
     Input: url - your Medium RSS Feed Url eg. https://medium.com/feed/@@ming.zhong
@@ -17,7 +18,7 @@ def get_medium_publications(url):
         link = item.find("link").text
         desc = BeautifulSoup(item.find('{http://purl.org/rss/1.0/modules/content/}encoded').text, "html.parser")
         imgurl = desc.find("img")["src"]
-        summary = desc.find("p").text[:50]+"..."
+        summary = desc.find("p").text[:50] + "..."
 
         out.append({
             "post_title": title,
