@@ -47,3 +47,7 @@ def aboutme():
 @app.route("/project")
 def project():
     return render_template("project.html", all_posts=posts)
+
+
+if __name__ == '__main__':
+    app.run()
