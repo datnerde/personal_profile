@@ -30,7 +30,6 @@ def get_medium_publications(url):
     return out
 
 
-posts = get_medium_publications(url="https://medium.com/feed/@ming.zhong")
 application = Flask(__name__)
 
 
@@ -46,6 +45,7 @@ def aboutme():
 
 @application.route("/project")
 def project():
+    posts = get_medium_publications(url="https://medium.com/feed/@ming.zhong")
     return render_template("project.html", all_posts=posts)
 
 
